@@ -1,0 +1,41 @@
+##### All the files/folders present with below patterns will be ignored by GIT   #####
+
+##---- Package Files 
+*.jar
+*.war
+*.ear
+
+
+##---- Maven build artifact repo
+target
+
+
+##---- build folder
+build
+
+
+##---- Temp folder
+RemoteSystemsTempFiles
+
+
+##---- Eclipse specific files
+*.classpath
+##*.project
+*.settings
+*.metadata
+
+
+##---- Eclipse specific files
+/.classpath
+/*/.classpath
+##/./.project
+/*/.classpath
+/.classpath
+/*.*/.classpath
+##/.project
+
+*.class
+/*.MF
+
+
+
