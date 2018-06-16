@@ -6,7 +6,9 @@
   <name>Spring Boot Application</name>
   <description>This is a demo Spring Boot Application</description>
   
-  
+  <!--  This does not pull any dependency. It just tells maven what jars to pull when you add dependencies. 
+  		This is just a configuration that tells what version of those jars to download
+   -->
   <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
