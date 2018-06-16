@@ -4,3 +4,10 @@ Embedded Tomcat Server
 (2) Servlet container config is now application config
 (3) Standalone application
 (4) useful for microservices architecture
+
+
+=============================================
+Business Service in spring are typically singleton. When app starts up, Spring creates an instance of this service and keeps it 
+in its memory/ registers this instance. You can have other classes/services/controllers that depend on it.
+It declares a dependency and spring knows that this instance it has to inject to those classes.
+
