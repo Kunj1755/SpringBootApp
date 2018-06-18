@@ -1,7 +1,13 @@
 package com.kunj.springbootstarter.topic;
 
-public class Topic {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+// With @Entity annotation JPA knows to create a table with name Topic
+@Entity
+public class Topic {
+	
+	@Id // To declare a primary key
 	private String id;
 	private String name;
 	private String description;

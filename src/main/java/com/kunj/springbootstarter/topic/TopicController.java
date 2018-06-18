@@ -31,7 +31,7 @@ public class TopicController {
 	}
 	
 	@RequestMapping(method=RequestMethod.PUT, value="/topics/{id}")
-	public void updateTopic(@PathVariable("id") String id, Topic topic) {
+	public void updateTopic(@PathVariable("id") String id, @RequestBody Topic topic) {
 		 topicService.updateTopic(id, topic);
 	}
 	
@@ -40,5 +40,4 @@ public class TopicController {
 		 topicService.deleteTopic(id);
 	}
 	
-
 }

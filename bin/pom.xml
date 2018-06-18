@@ -9,28 +9,17 @@
   <!--  This does not pull any dependency. It just tells maven what jars to pull when you add dependencies. 
   		This is just a configuration that tells what version of those jars to download
    -->
-    <parent>
+  <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.2.RELEASE</version>
 	</parent>
 	
 	<dependencies>
-	<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!-- The framework sees the embedded Derby database in the classpath and assumes that to be database to connect to. No connection information necessary. -->
-		<dependency>
-			<groupId>org.apache.derby</groupId>
-			<artifactId>derby</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-				
 		
 	</dependencies>
 	
